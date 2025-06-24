@@ -20,3 +20,20 @@ app.get("/", function (req, res) {
 
 app.listen(3000);
 
+
+// create a route handler for GET request on the root URL
+app.get('/', function (req, res) {
+    res.send('a1');
+});
+
+app.get("/", (req, res) => {
+    res.send("a2");
+});
+
+app.get("/abc", (req, res) => {
+    res.send("abc");
+});
+
+app.post("/", function (req, res) {
+    res.send("a4");
+});
